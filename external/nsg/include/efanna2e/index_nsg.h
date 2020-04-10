@@ -33,6 +33,17 @@ class IndexNSG : public Index {
       size_t k,
       const Parameters &parameters,
       unsigned *indices) override;
+  void Search(
+      const float *query,
+      const float *x,
+      size_t K,
+	  size_t L,
+      std::vector<Neighbor>& neighbors);
+  void SearchWithOptGraph(
+      const float *query,
+      size_t K,
+	  size_t L,
+      std::vector<Neighbor>& neighbors);
   void SearchWithOptGraph(
       const float *query,
       size_t K,

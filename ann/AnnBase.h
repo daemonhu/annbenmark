@@ -5,6 +5,7 @@
 
 class AnnBase {
  public:
+	AnnBase() = default;
 	AnnBase(const std::string& base_file_path, const std::string& query_file_path,
           const std::string& groundtruth_file_path);
  public:
@@ -16,6 +17,8 @@ class AnnBase {
 				  int& times,
                   std::map<int, double>& prec_sum,
                   std::map<int, double>& time_sum);
+	virtual ~AnnBase() = default;
  protected:
 	SiftUtil sift_util;
 };
+

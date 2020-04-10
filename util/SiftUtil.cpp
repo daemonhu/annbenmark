@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+SiftUtil::SiftUtil() {}
+
 SiftUtil::SiftUtil(const std::string& base_file_path,
                    const std::string& query_file_path,
                    const std::string groudtruth_file_path)
@@ -75,7 +77,7 @@ int SiftUtil::get_fvec_info(std::ifstream& in, int& vec_dim, int& vec_num) {
 int SiftUtil::load_fevc_base_file() {
   std::ifstream input_stream(base_file_path, std::ios::in | std::ios::binary);
   if (input_stream.fail()) {
-    std::cout << "open file " << base_file_path << "failed" << std::endl;
+    std::cout << __LINE__ << "open file " << base_file_path << " failed" << std::endl;
     return -1;
   }
 
@@ -104,7 +106,7 @@ int SiftUtil::load_fevc_base_file() {
 int SiftUtil::load_fevc_query_file() {
   std::ifstream input_stream(query_file_path, std::ios::in | std::ios::binary);
   if (input_stream.fail()) {
-    std::cout << "open file" << base_file_path << " failed" << std::endl;
+    std::cout << "open query file" << query_file_path << " failed" << std::endl;
     return -1;
   }
   int dim_tmp;
@@ -136,7 +138,7 @@ int SiftUtil::load_groundtruth_ivec_file() {
   std::ifstream input_stream(groundtruth_file_path,
                              std::ios::in | std::ios::binary);
   if (input_stream.fail()) {
-    std::cout << "open file" << base_file_path << " failed" << std::endl;
+    std::cout << __LINE__ << " open file " << groundtruth_file_path << " failed" << std::endl;
     return -1;
   }
 

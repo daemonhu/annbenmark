@@ -22,6 +22,7 @@ struct SiftGroundTruthData {
 // todo it's not perfect code, i will improve this later
 class SiftUtil {
  public:
+  SiftUtil();
   SiftUtil(const std::string& base_file_path,
            const std::string& query_file_path,
            const std::string groudtruth_file_path);
@@ -58,8 +59,8 @@ class SiftUtil {
 
   int dim;
   int fvec_base_vec_num;
-  float* fvec_base_vec;
+  float* fvec_base_vec = nullptr;
   int fvec_query_vec_num;
-  float* fvec_query_vec;
+  float* fvec_query_vec = nullptr;
   std::vector<SiftGroundTruthData> fvec_groundtruth_data;
 };

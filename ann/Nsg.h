@@ -19,7 +19,7 @@ public:
             unsigned nnR, const std::string &nn_graph_file, unsigned L,
             unsigned R, unsigned C);
   int build();
-  int addAll(const std::vector<std::vector<float>>& queries);
+  int addAll(const std::vector<std::vector<float>> &queries);
   virtual int save_index(const std::string &file_name);
   virtual int get_nn_by_vec(const float *vec, int n, int K,
                             std::vector<int> &closest);

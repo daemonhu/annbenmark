@@ -19,8 +19,8 @@ Nsg::Nsg(const std::string &base_file_path, const std::string &query_file_path,
 
 Nsg::Nsg(int dim, unsigned K, unsigned L1, unsigned iter, unsigned S,
          unsigned R1, unsigned L2, unsigned R2, unsigned C)
-    : dim_(dim), K_(K), L1_(L1), I_(iter), S_(S), R1_(R1), L2_(L2), R2_(R2),
-      C_(C), index(nullptr) {
+    : index(nullptr), dim_(dim), K_(K), L1_(L1), I_(iter), S_(S), R1_(R1), L2_(L2), R2_(R2),
+      C_(C) {
   assert(L1 >= K);
 }
 
@@ -37,9 +37,10 @@ int Nsg::close() {
     delete index;
     index = nullptr;
   }
+  return 0;
 }
 
-int Nsg::optimizeGraph() { index->OptimizeGraph(data_.data()); }
+int Nsg::optimizeGraph() { index->OptimizeGraph(data_.data()); return 0; }
 
 int Nsg::save(const std::string &data_path, const std::string &nsg_path) {
   int ret = 0;
@@ -114,6 +115,7 @@ int Nsg::addAll(const std::vector<std::vector<float>>& queries) {
   for (auto &&query : queries) {
     data_.insert(data_.end(), query.begin(), query.end());
   }
+  return 0;
 }
 
 int Nsg::build() {

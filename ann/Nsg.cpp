@@ -1,25 +1,34 @@
 #include "Nsg.h"
-#include "efanna2e/parameters.h"
+
 #include <efanna2e/index_graph.h>
 #include <efanna2e/index_random.h>
 #include <efanna2e/neighbor.h>
+#include <efanna2e/parameters.h>
 #include <efanna2e/util.h>
 
 #include <algorithm>
+#include <cassert>
 #include <chrono>
 #include <cstdio>
 #include <iostream>
 #include <iterator>
-#include <cassert>
 
 Nsg::Nsg(const std::string &base_file_path, const std::string &query_file_path,
-         const std::string &groundtruth_file_path)
+	 const std::string &groundtruth_file_path)
     : AnnBase(base_file_path, query_file_path, groundtruth_file_path),
       index(nullptr) {}
 
 Nsg::Nsg(int dim, unsigned K, unsigned L1, unsigned iter, unsigned S,
-         unsigned R1, unsigned L2, unsigned R2, unsigned C)
-    : index(nullptr), dim_(dim), K_(K), L1_(L1), I_(iter), S_(S), R1_(R1), L2_(L2), R2_(R2),
+	 unsigned R1, unsigned L2, unsigned R2, unsigned C)
+    : index(nullptr),
+      dim_(dim),
+      K_(K),
+      L1_(L1),
+      I_(iter),
+      S_(S),
+      R1_(R1),
+      L2_(L2),
+      R2_(R2),
       C_(C) {
   assert(L1 >= K);
 }
@@ -40,7 +49,10 @@ int Nsg::close() {
   return 0;
 }
 
-int Nsg::optimizeGraph() { index->OptimizeGraph(data_.data()); return 0; }
+int Nsg::optimizeGraph() {
+  index->OptimizeGraph(data_.data());
+  return 0;
+}
 
 int Nsg::save(const std::string &data_path, const std::string &nsg_path) {
   int ret = 0;
@@ -58,17 +70,17 @@ int Nsg::save(const std::string &data_path, const std::string &nsg_path) {
 std::vector<float> &Nsg::data() { return data_; }
 
 int Nsg::load(const std::string &data_path, const std::string &nsg_path) {
-	if (load_data(data_path)) {
-	  std::cerr << "ERROR load " << data_path << std::endl;
-	  return -1;
-	}
-	return load_index(nsg_path);
+  if (load_data(data_path)) {
+    std::cerr << "ERROR load " << data_path << std::endl;
+    return -1;
+  }
+  return load_index(nsg_path);
 }
 
 int Nsg::load_index(const std::string &nsg_path) {
   if (index) {
     delete index;
-	index = nullptr;
+    index = nullptr;
   }
   index = new efanna2e::IndexNSG(dim_, data_size_, efanna2e::L2, nullptr);
   index->Load(nsg_path.c_str());
@@ -80,7 +92,7 @@ int Nsg::load_data(const std::string &data_path) {
   std::ifstream in(data_path, std::ios::binary);
   if (!in.is_open()) {
     std::cerr << "open file error" << std::endl;
-	return -1;
+    return -1;
   }
   in.read((char *)&dim_, 4);
   // std::cout<<"data dimension: "<<dim<<std::endl;
@@ -110,7 +122,7 @@ int Nsg::save_data(const std::string &data_path) {
   return 0;
 }
 
-int Nsg::addAll(const std::vector<std::vector<float>>& queries) {
+int Nsg::addAll(const std::vector<std::vector<float>> &queries) {
   data_size_ += queries.size();
   for (auto &&query : queries) {
     data_.insert(data_.end(), query.begin(), query.end());
@@ -161,9 +173,8 @@ int Nsg::build() {
 }
 
 int Nsg::build(unsigned nnK, unsigned nnL, unsigned nnIter, unsigned nnS,
-               unsigned nnR, const std::string &nn_graph_file, unsigned L,
-               unsigned R, unsigned C) {
-
+	       unsigned nnR, const std::string &nn_graph_file, unsigned L,
+	       unsigned R, unsigned C) {
   std::chrono::high_resolution_clock::time_point start, end;
 
   std::cout << "generating nn graph..." << std::endl;
@@ -201,30 +212,29 @@ int Nsg::build(unsigned nnK, unsigned nnL, unsigned nnIter, unsigned nnS,
 }
 
 std::vector<efanna2e::Neighbor> Nsg::search(const std::vector<float> &query,
-                                            unsigned L, unsigned K) {
+					    unsigned L, unsigned K) {
   std::vector<efanna2e::Neighbor> result;
   if (L < K) {
-	  std::cerr << "ERROR L:" << L << " is smaller than K:" << K << std::endl;
-	  return result;
+    std::cerr << "ERROR L:" << L << " is smaller than K:" << K << std::endl;
+    return result;
   }
   index->Search(query.data(), data_.data(), K, L, result);
   return result;
 }
 
-std::vector<efanna2e::Neighbor>
-Nsg::searchWithOptGraph(const std::vector<float> &query, unsigned L,
-                        unsigned K) {
+std::vector<efanna2e::Neighbor> Nsg::searchWithOptGraph(
+    const std::vector<float> &query, unsigned L, unsigned K) {
   std::vector<efanna2e::Neighbor> result;
   if (L < K) {
-	  std::cerr << "ERROR L:" << L << " is smaller than K:" << K << std::endl;
-	  return result;
+    std::cerr << "ERROR L:" << L << " is smaller than K:" << K << std::endl;
+    return result;
   }
   index->SearchWithOptGraph(query.data(), K, L, result);
   return result;
 }
 
 int Nsg::get_nn_by_vec(const float *vec, int nn_num, int search_para,
-                       std::vector<int> &toplist) {
+		       std::vector<int> &toplist) {
   efanna2e::Parameters paras;
   paras.Set<unsigned>("L_search", search_para);
   paras.Set<unsigned>("P_search", search_para);
@@ -240,9 +250,8 @@ int Nsg::save_index(const std::string &nsg_path) {
 }
 
 int Nsg::genernate_nn_graph(unsigned K, unsigned L, unsigned iter, unsigned S,
-                            unsigned R, const std::string &nn_graph_file) {
-
-  const float* data_load = sift_util.get_base_vec();
+			    unsigned R, const std::string &nn_graph_file) {
+  const float *data_load = sift_util.get_base_vec();
   unsigned int points_num = sift_util.get_base_vec_num();
   unsigned int dim = sift_util.get_dim();
 
@@ -250,7 +259,7 @@ int Nsg::genernate_nn_graph(unsigned K, unsigned L, unsigned iter, unsigned S,
   // align the data before build
   efanna2e::IndexRandom init_index(dim_, data_size_);
   efanna2e::IndexGraph graph_index(dim_, data_size_, efanna2e::L2,
-                                   (efanna2e::Index *)(&init_index));
+				   (efanna2e::Index *)(&init_index));
 
   efanna2e::Parameters paras;
   paras.Set<unsigned>("K", K);

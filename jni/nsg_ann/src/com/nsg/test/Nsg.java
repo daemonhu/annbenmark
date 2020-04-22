@@ -36,12 +36,16 @@ public class Nsg extends AnnBase {
     super.delete();
   }
 
+  public Nsg() {
+    this(nsgannJNI.new_Nsg__SWIG_0(), true);
+  }
+
   public Nsg(String base_file_path, String query_file_path, String groundtruth_file_path) {
-    this(nsgannJNI.new_Nsg__SWIG_0(base_file_path, query_file_path, groundtruth_file_path), true);
+    this(nsgannJNI.new_Nsg__SWIG_1(base_file_path, query_file_path, groundtruth_file_path), true);
   }
 
   public Nsg(int dim, long K, long L1, long iter, long S, long R1, long L2, long R2, long C) {
-    this(nsgannJNI.new_Nsg__SWIG_1(dim, K, L1, iter, S, R1, L2, R2, C), true);
+    this(nsgannJNI.new_Nsg__SWIG_2(dim, K, L1, iter, S, R1, L2, R2, C), true);
   }
 
   public int build(long nnK, long nnL, long nnIter, long nnS, long nnR, String nn_graph_file, long L, long R, long C) {

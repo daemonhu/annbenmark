@@ -88,8 +88,9 @@ public class nsgannJNI {
   public final static native int AnnBase_save_index(long jarg1, AnnBase jarg1_, String jarg2);
   public final static native int AnnBase_precision(long jarg1, AnnBase jarg1_, long jarg2, int jarg3, long jarg4, long jarg5, long jarg6);
   public final static native void delete_AnnBase(long jarg1);
-  public final static native long new_Nsg__SWIG_0(String jarg1, String jarg2, String jarg3);
-  public final static native long new_Nsg__SWIG_1(int jarg1, long jarg2, long jarg3, long jarg4, long jarg5, long jarg6, long jarg7, long jarg8, long jarg9);
+  public final static native long new_Nsg__SWIG_0();
+  public final static native long new_Nsg__SWIG_1(String jarg1, String jarg2, String jarg3);
+  public final static native long new_Nsg__SWIG_2(int jarg1, long jarg2, long jarg3, long jarg4, long jarg5, long jarg6, long jarg7, long jarg8, long jarg9);
   public final static native void delete_Nsg(long jarg1);
   public final static native int Nsg_build__SWIG_0(long jarg1, Nsg jarg1_, long jarg2, long jarg3, long jarg4, long jarg5, long jarg6, String jarg7, long jarg8, long jarg9, long jarg10);
   public final static native int Nsg_build__SWIG_1(long jarg1, Nsg jarg1_);

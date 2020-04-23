@@ -2187,7 +2187,19 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1AnnBase(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jstring jarg1, jstring jarg2, jstring jarg3) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  Nsg *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (Nsg *)new Nsg();
+  *(Nsg **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jstring jarg1, jstring jarg2, jstring jarg3) {
   jlong jresult = 0 ;
   std::string *arg1 = 0 ;
   std::string *arg2 = 0 ;
@@ -2229,7 +2241,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7, jlong jarg8, jlong jarg9) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7, jlong jarg8, jlong jarg9) {
   jlong jresult = 0 ;
   int arg1 ;
   unsigned int arg2 ;

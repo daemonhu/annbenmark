@@ -8,6 +8,7 @@
 
 class Nsg : public AnnBase {
 public:
+  Nsg() = default;
   Nsg(const std::string &base_file_path, const std::string &query_file_path,
       const std::string &groundtruth_file_path);
   Nsg(int dim, unsigned K, unsigned L1, unsigned iter, unsigned S, unsigned R1,

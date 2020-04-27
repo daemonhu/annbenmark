@@ -9,9 +9,9 @@
 #include <algorithm>
 #include <cassert>
 #include <chrono>
-#include <cstdio>
 #include <iostream>
 #include <iterator>
+#include <unistd.h>
 
 Nsg::Nsg(const std::string &base_file_path, const std::string &query_file_path,
 	 const std::string &groundtruth_file_path)
@@ -138,8 +138,16 @@ int Nsg::build() {
   std::cout << "generating nn graph..." << std::endl;
   start = std::chrono::high_resolution_clock::now();
   std::string nn_graph_file;
-  char buffer[L_tmpnam] = {0};
-  std::tmpnam(buffer);
+  char buffer[] = "/tmp/nsg_nn_graph_XXXXXX";
+  int fd = mkstemp(buffer);
+  if (fd < 0) {
+    std::cerr << "ERR mkstemp " << fd << std::endl;
+    return -1;
+  }
+  if (::close(fd) < 0) {
+    std::cerr << "ERR close fd" << fd << std::endl;
+    return -1;
+  }
   nn_graph_file = buffer;
   genernate_nn_graph(K_, L1_, I_, S_, R1_, nn_graph_file);
   end = std::chrono::high_resolution_clock::now();
@@ -151,15 +159,14 @@ int Nsg::build() {
   start = std::chrono::high_resolution_clock::now();
   index = new efanna2e::IndexNSG(dim_, data_size_, efanna2e::L2, nullptr);
 
-  auto s = std::chrono::high_resolution_clock::now();
   efanna2e::Parameters paras;
   paras.Set<unsigned>("L", L2_);
   paras.Set<unsigned>("R", R2_);
   paras.Set<unsigned>("C", C_);
+  std::cout << "nn_graph_file: " << nn_graph_file << std::endl;
   paras.Set<std::string>("nn_graph_path", nn_graph_file);
 
   index->Build(data_size_, data_.data(), paras);
-  auto e = std::chrono::high_resolution_clock::now();
 
   end = std::chrono::high_resolution_clock::now();
   duration =
@@ -192,7 +199,6 @@ int Nsg::build(unsigned nnK, unsigned nnL, unsigned nnIter, unsigned nnS,
   unsigned int dim = sift_util.get_dim();
   index = new efanna2e::IndexNSG(dim, points_num, efanna2e::L2, nullptr);
 
-  auto s = std::chrono::high_resolution_clock::now();
   efanna2e::Parameters paras;
   paras.Set<unsigned>("L", L);
   paras.Set<unsigned>("R", R);
@@ -201,7 +207,6 @@ int Nsg::build(unsigned nnK, unsigned nnL, unsigned nnIter, unsigned nnS,
 
   index->Build(points_num, data_load, paras);
   index->OptimizeGraph(const_cast<float *>(data_load));
-  auto e = std::chrono::high_resolution_clock::now();
 
   end = std::chrono::high_resolution_clock::now();
   duration =
@@ -251,11 +256,7 @@ int Nsg::save_index(const std::string &nsg_path) {
 
 int Nsg::genernate_nn_graph(unsigned K, unsigned L, unsigned iter, unsigned S,
 			    unsigned R, const std::string &nn_graph_file) {
-  const float *data_load = sift_util.get_base_vec();
-  unsigned int points_num = sift_util.get_base_vec_num();
-  unsigned int dim = sift_util.get_dim();
 
-  // data_load = efanna2e::data_align(data_load, points_num, dim);//one must
   // align the data before build
   efanna2e::IndexRandom init_index(dim_, data_size_);
   efanna2e::IndexGraph graph_index(dim_, data_size_, efanna2e::L2,

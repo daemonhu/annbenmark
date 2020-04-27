@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.nsg.test;
+package com.nsg;
 
 public class nsgannJNI {
   public final static native long new_VectorOfNeighbor__SWIG_0();
@@ -67,8 +67,8 @@ public class nsgannJNI {
 
   static {
     try {
-      System.loadLibrary("efanna2e_d");
-      System.loadLibrary("nsgann");
+        System.loadLibrary("efanna2e_d");
+        System.loadLibrary("nsgann");
     } catch (UnsatisfiedLinkError e) {
       System.err.println("Native code library failed to load. \n" + e);
       System.exit(1);

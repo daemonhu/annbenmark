@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.nsg.test;
+package com.nsg;
 
 public class Nsg extends AnnBase {
   private transient long swigCPtr;

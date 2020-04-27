@@ -6,7 +6,7 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.nsg.test;
+package com.nsg;
 
 public class VecVecFloat extends java.util.AbstractList<VectorOfFloat> implements java.util.RandomAccess {
   private transient long swigCPtr;

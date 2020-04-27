@@ -6,20 +6,20 @@
  * the SWIG interface file instead.
  * ----------------------------------------------------------------------------- */
 
-package com.nsg.test;
+package com.nsg;
 
-public class SWIGTYPE_p_std__mapT_int_double_t {
+public class SWIGTYPE_p_std__vectorT_int_t {
   private transient long swigCPtr;
 
-  protected SWIGTYPE_p_std__mapT_int_double_t(long cPtr, @SuppressWarnings("unused") boolean futureUse) {
+  protected SWIGTYPE_p_std__vectorT_int_t(long cPtr, @SuppressWarnings("unused") boolean futureUse) {
     swigCPtr = cPtr;
   }
 
-  protected SWIGTYPE_p_std__mapT_int_double_t() {
+  protected SWIGTYPE_p_std__vectorT_int_t() {
     swigCPtr = 0;
   }
 
-  protected static long getCPtr(SWIGTYPE_p_std__mapT_int_double_t obj) {
+  protected static long getCPtr(SWIGTYPE_p_std__vectorT_int_t obj) {
     return (obj == null) ? 0 : obj.swigCPtr;
   }
 }

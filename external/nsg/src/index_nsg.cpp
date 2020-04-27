@@ -413,11 +413,27 @@ void IndexNSG::Build(size_t n, const float *data,
                      const Parameters &parameters) {
   std::string nn_graph_path = parameters.Get<std::string>("nn_graph_path");
   unsigned range = parameters.Get<unsigned>("R");
+  auto start = std::chrono::system_clock::now();
   Load_nn_graph(nn_graph_path.c_str());
+  auto end = std::chrono::system_clock::now();
+  using std::cout;
+  using std::endl;
+  cout << "Load_nn_graph at: "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
+
   data_ = data;
   init_graph(parameters);
+  end = std::chrono::system_clock::now();
+  cout << "init_graph at "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
   SimpleNeighbor *cut_graph_ = new SimpleNeighbor[nd_ * (size_t)range];
   Link(parameters, cut_graph_);
+  end = std::chrono::system_clock::now();
+  cout << "Link at "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
   final_graph_.resize(nd_);
 
   for (size_t i = 0; i < nd_; i++) {
@@ -434,8 +450,16 @@ void IndexNSG::Build(size_t n, const float *data,
       final_graph_[i][j] = pool[j].id;
     }
   }
+  end = std::chrono::system_clock::now();
+  cout << "For range(nd_) at "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
 
   tree_grow(parameters);
+  end = std::chrono::system_clock::now();
+  cout << "tree_grow at "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
 
   unsigned max = 0, min = 1e6, avg = 0;
   for (size_t i = 0; i < nd_; i++) {
@@ -444,6 +468,11 @@ void IndexNSG::Build(size_t n, const float *data,
     min = min > size ? size : min;
     avg += size;
   }
+  end = std::chrono::system_clock::now();
+  cout << "For range(nd_) at "
+       << std::chrono::duration_cast<std::chrono::seconds>(end - start).count()
+       << " seconds" << endl;
+
   avg /= 1.0 * nd_;
   printf("Degree Statistics: Max = %d, Min = %d, Avg = %d\n", max, min, avg);
 

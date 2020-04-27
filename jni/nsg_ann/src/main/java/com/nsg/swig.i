@@ -29,6 +29,7 @@ using namespace efanna2e;
 %pragma(java) jniclasscode=%{
   static {
     try {
+        System.loadLibrary("efanna2e_d");
         System.loadLibrary("nsgann");
     } catch (UnsatisfiedLinkError e) {
       System.err.println("Native code library failed to load. \n" + e);

@@ -1002,7 +1002,7 @@ static double doublep_value(double *obj) {
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *result = 0 ;
   
@@ -1014,7 +1014,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SW
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = 0 ;
   std::vector< efanna2e::Neighbor > *result = 0 ;
@@ -1033,7 +1033,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SW
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   std::vector< efanna2e::Neighbor >::size_type result;
@@ -1048,7 +1048,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1capacity(
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   std::vector< efanna2e::Neighbor >::size_type arg2 ;
   
@@ -1066,7 +1066,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1reserve(JN
 }
 
 
-SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jboolean JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jboolean jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   bool result;
@@ -1081,7 +1081,7 @@ SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1isEmpt
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   
   (void)jenv;
@@ -1092,7 +1092,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1clear(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfNeighbor_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jlong jresult = 0 ;
   jint arg1 ;
   efanna2e::Neighbor *arg2 = 0 ;
@@ -1118,7 +1118,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfNeighbor_1_1SW
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint result;
@@ -1138,7 +1138,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doSize(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   std::vector< efanna2e::Neighbor >::value_type *arg2 = 0 ;
   
@@ -1156,7 +1156,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doAdd_1_1S
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint arg2 ;
   std::vector< efanna2e::Neighbor >::value_type *arg3 = 0 ;
@@ -1181,7 +1181,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doAdd_1_1S
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint arg2 ;
@@ -1203,7 +1203,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doRemove(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint arg2 ;
@@ -1225,7 +1225,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doGet(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
   jlong jresult = 0 ;
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint arg2 ;
@@ -1254,7 +1254,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doSet(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfNeighbor_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   jint arg2 ;
   jint arg3 ;
@@ -1274,7 +1274,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfNeighbor_1doRemoveRa
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VectorOfNeighbor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1VectorOfNeighbor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   std::vector< efanna2e::Neighbor > *arg1 = (std::vector< efanna2e::Neighbor > *) 0 ;
   
   (void)jenv;
@@ -1284,7 +1284,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VectorOfNeighbor(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfFloat_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   std::vector< float > *result = 0 ;
   
@@ -1296,7 +1296,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfFloat_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< float > *arg1 = 0 ;
   std::vector< float > *result = 0 ;
@@ -1315,7 +1315,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   std::vector< float >::size_type result;
@@ -1330,7 +1330,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1capacity(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   std::vector< float >::size_type arg2 ;
   
@@ -1348,7 +1348,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1reserve(JNIEn
 }
 
 
-SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jboolean JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jboolean jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   bool result;
@@ -1363,7 +1363,7 @@ SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1isEmpty(J
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   
   (void)jenv;
@@ -1374,7 +1374,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1clear(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jfloat jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VectorOfFloat_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jfloat jarg2) {
   jlong jresult = 0 ;
   jint arg1 ;
   float *arg2 = 0 ;
@@ -1397,7 +1397,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VectorOfFloat_1_1SWIG_
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint result;
@@ -1417,7 +1417,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doSize(JNIEnv
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   std::vector< float >::value_type *arg2 = 0 ;
   std::vector< float >::value_type temp2 ;
@@ -1432,7 +1432,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint arg2 ;
   std::vector< float >::value_type *arg3 = 0 ;
@@ -1454,7 +1454,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doAdd_1_1SWIG
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jfloat JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jfloat jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint arg2 ;
@@ -1476,7 +1476,7 @@ SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doRemove(JN
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jfloat JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jfloat jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint arg2 ;
@@ -1498,7 +1498,7 @@ SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doGet(JNIEn
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
+SWIGEXPORT jfloat JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jfloat jarg3) {
   jfloat jresult = 0 ;
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint arg2 ;
@@ -1524,7 +1524,7 @@ SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doSet(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VectorOfFloat_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   jint arg2 ;
   jint arg3 ;
@@ -1544,7 +1544,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VectorOfFloat_1doRemoveRange
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VectorOfFloat(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1VectorOfFloat(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   std::vector< float > *arg1 = (std::vector< float > *) 0 ;
   
   (void)jenv;
@@ -1554,7 +1554,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VectorOfFloat(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VecVecFloat_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *result = 0 ;
   
@@ -1566,7 +1566,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_10
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VecVecFloat_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = 0 ;
   std::vector< std::vector< float > > *result = 0 ;
@@ -1585,7 +1585,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_11
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1capacity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   std::vector< std::vector< float > >::size_type result;
@@ -1600,7 +1600,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1capacity(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1reserve(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   std::vector< std::vector< float > >::size_type arg2 ;
   
@@ -1618,7 +1618,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1reserve(JNIEnv 
 }
 
 
-SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jboolean JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1isEmpty(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jboolean jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   bool result;
@@ -1633,7 +1633,7 @@ SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1isEmpty(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1clear(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   
   (void)jenv;
@@ -1644,7 +1644,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1clear(JNIEnv *j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1VecVecFloat_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jobject jarg2_) {
   jlong jresult = 0 ;
   jint arg1 ;
   std::vector< float > *arg2 = 0 ;
@@ -1670,7 +1670,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1VecVecFloat_1_1SWIG_12
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doSize(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint result;
@@ -1690,7 +1690,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doSize(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   std::vector< std::vector< float > >::value_type *arg2 = 0 ;
   
@@ -1708,7 +1708,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_1
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint arg2 ;
   std::vector< std::vector< float > >::value_type *arg3 = 0 ;
@@ -1733,7 +1733,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doAdd_1_1SWIG_1
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doRemove(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint arg2 ;
@@ -1755,7 +1755,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doRemove(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doGet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint arg2 ;
@@ -1777,7 +1777,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doGet(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doSet(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3, jobject jarg3_) {
   jlong jresult = 0 ;
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint arg2 ;
@@ -1806,7 +1806,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doSet(JNIEnv *
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_VecVecFloat_1doRemoveRange(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   jint arg2 ;
   jint arg3 ;
@@ -1826,7 +1826,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_VecVecFloat_1doRemoveRange(J
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VecVecFloat(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1VecVecFloat(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   std::vector< std::vector< float > > *arg1 = (std::vector< std::vector< float > > *) 0 ;
   
   (void)jenv;
@@ -1836,7 +1836,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1VecVecFloat(JNIEnv *
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1intp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1intp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   int *result = 0 ;
   
@@ -1848,7 +1848,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1intp(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_copy_1intp(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_copy_1intp(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jlong jresult = 0 ;
   int arg1 ;
   int *result = 0 ;
@@ -1862,7 +1862,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_copy_1intp(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1intp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1intp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   int *arg1 = (int *) 0 ;
   
   (void)jenv;
@@ -1872,7 +1872,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1intp(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_intp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_intp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   int *arg1 = (int *) 0 ;
   int arg2 ;
   
@@ -1884,7 +1884,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_intp_1assign(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_intp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_intp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jint jresult = 0 ;
   int *arg1 = (int *) 0 ;
   int result;
@@ -1898,7 +1898,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_intp_1value(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1doublep(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1doublep(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   double *result = 0 ;
   
@@ -1910,7 +1910,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1doublep(JNIEnv *jenv, 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_copy_1doublep(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_copy_1doublep(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jlong jresult = 0 ;
   double arg1 ;
   double *result = 0 ;
@@ -1924,7 +1924,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_copy_1doublep(JNIEnv *jenv,
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1doublep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1doublep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   double *arg1 = (double *) 0 ;
   
   (void)jenv;
@@ -1934,7 +1934,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1doublep(JNIEnv *jenv
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_doublep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jdouble jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_doublep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jdouble jarg2) {
   double *arg1 = (double *) 0 ;
   double arg2 ;
   
@@ -1946,7 +1946,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_doublep_1assign(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jdouble JNICALL Java_com_nsg_test_nsgannJNI_doublep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jdouble JNICALL Java_com_nsg_nsgannJNI_doublep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jdouble jresult = 0 ;
   double *arg1 = (double *) 0 ;
   double result;
@@ -1960,7 +1960,7 @@ SWIGEXPORT jdouble JNICALL Java_com_nsg_test_nsgannJNI_doublep_1value(JNIEnv *je
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1id_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_Neighbor_1id_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   unsigned int arg2 ;
   
@@ -1973,7 +1973,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1id_1set(JNIEnv *je
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1id_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_Neighbor_1id_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   unsigned int result;
@@ -1988,7 +1988,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1id_1get(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1distance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_Neighbor_1distance_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jfloat jarg2) {
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   float arg2 ;
   
@@ -2001,7 +2001,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1distance_1set(JNIE
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1distance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jfloat JNICALL Java_com_nsg_nsgannJNI_Neighbor_1distance_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jfloat jresult = 0 ;
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   float result;
@@ -2016,7 +2016,7 @@ SWIGEXPORT jfloat JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1distance_1get(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1flag_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jboolean jarg2) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_Neighbor_1flag_1set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jboolean jarg2) {
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   bool arg2 ;
   
@@ -2029,7 +2029,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1flag_1set(JNIEnv *
 }
 
 
-SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1flag_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jboolean JNICALL Java_com_nsg_nsgannJNI_Neighbor_1flag_1get(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jboolean jresult = 0 ;
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   bool result;
@@ -2044,7 +2044,7 @@ SWIGEXPORT jboolean JNICALL Java_com_nsg_test_nsgannJNI_Neighbor_1flag_1get(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Neighbor_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1Neighbor_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   efanna2e::Neighbor *result = 0 ;
   
@@ -2056,7 +2056,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Neighbor_1_1SWIG_10(JN
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Neighbor_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2, jboolean jarg3) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1Neighbor_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2, jboolean jarg3) {
   jlong jresult = 0 ;
   unsigned int arg1 ;
   float arg2 ;
@@ -2074,7 +2074,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Neighbor_1_1SWIG_11(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1Neighbor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1Neighbor(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   efanna2e::Neighbor *arg1 = (efanna2e::Neighbor *) 0 ;
   
   (void)jenv;
@@ -2084,7 +2084,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1Neighbor(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1get_1nn_1by_1vec(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jint jarg4, jlong jarg5) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_AnnBase_1get_1nn_1by_1vec(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jint jarg4, jlong jarg5) {
   jint jresult = 0 ;
   AnnBase *arg1 = (AnnBase *) 0 ;
   float *arg2 = (float *) 0 ;
@@ -2111,7 +2111,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1get_1nn_1by_1vec(JN
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1save_1index(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_AnnBase_1save_1index(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
   jint jresult = 0 ;
   AnnBase *arg1 = (AnnBase *) 0 ;
   std::string *arg2 = 0 ;
@@ -2136,7 +2136,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1save_1index(JNIEnv 
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1precision(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jlong jarg4, jlong jarg5, jlong jarg6) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_AnnBase_1precision(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jlong jarg4, jlong jarg5, jlong jarg6) {
   jint jresult = 0 ;
   AnnBase *arg1 = (AnnBase *) 0 ;
   std::vector< int > *arg2 = 0 ;
@@ -2177,7 +2177,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_AnnBase_1precision(JNIEnv *j
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1AnnBase(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1AnnBase(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   AnnBase *arg1 = (AnnBase *) 0 ;
   
   (void)jenv;
@@ -2187,7 +2187,19 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1AnnBase(JNIEnv *jenv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jstring jarg1, jstring jarg2, jstring jarg3) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv *jenv, jclass jcls) {
+  jlong jresult = 0 ;
+  Nsg *result = 0 ;
+  
+  (void)jenv;
+  (void)jcls;
+  result = (Nsg *)new Nsg();
+  *(Nsg **)&jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1Nsg_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jstring jarg1, jstring jarg2, jstring jarg3) {
   jlong jresult = 0 ;
   std::string *arg1 = 0 ;
   std::string *arg2 = 0 ;
@@ -2229,7 +2241,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_10(JNIEnv 
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7, jlong jarg8, jlong jarg9) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_new_1Nsg_1_1SWIG_12(JNIEnv *jenv, jclass jcls, jint jarg1, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jlong jarg7, jlong jarg8, jlong jarg9) {
   jlong jresult = 0 ;
   int arg1 ;
   unsigned int arg2 ;
@@ -2259,7 +2271,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_new_1Nsg_1_1SWIG_11(JNIEnv 
 }
 
 
-SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1Nsg(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_com_nsg_nsgannJNI_delete_1Nsg(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   Nsg *arg1 = (Nsg *) 0 ;
   
   (void)jenv;
@@ -2269,7 +2281,7 @@ SWIGEXPORT void JNICALL Java_com_nsg_test_nsgannJNI_delete_1Nsg(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1build_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jstring jarg7, jlong jarg8, jlong jarg9, jlong jarg10) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1build_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3, jlong jarg4, jlong jarg5, jlong jarg6, jstring jarg7, jlong jarg8, jlong jarg9, jlong jarg10) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   unsigned int arg2 ;
@@ -2310,7 +2322,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1build_1_1SWIG_10(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1build_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1build_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   int result;
@@ -2325,7 +2337,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1build_1_1SWIG_11(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1addAll(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1addAll(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::vector< std::vector< float > > *arg2 = 0 ;
@@ -2347,7 +2359,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1addAll(JNIEnv *jenv, jc
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1save_1index(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1save_1index(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::string *arg2 = 0 ;
@@ -2372,7 +2384,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1save_1index(JNIEnv *jen
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1get_1nn_1by_1vec(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jint jarg4, jlong jarg5) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1get_1nn_1by_1vec(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3, jint jarg4, jlong jarg5) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   float *arg2 = (float *) 0 ;
@@ -2399,7 +2411,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1get_1nn_1by_1vec(JNIEnv
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1load(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jstring jarg3) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1load(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jstring jarg3) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::string *arg2 = 0 ;
@@ -2434,7 +2446,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1load(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1close(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1close(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   int result;
@@ -2449,7 +2461,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1close(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1optimizeGraph(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1optimizeGraph(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   int result;
@@ -2464,7 +2476,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1optimizeGraph(JNIEnv *j
 }
 
 
-SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1save(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jstring jarg3) {
+SWIGEXPORT jint JNICALL Java_com_nsg_nsgannJNI_Nsg_1save(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jstring jarg2, jstring jarg3) {
   jint jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::string *arg2 = 0 ;
@@ -2499,7 +2511,7 @@ SWIGEXPORT jint JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1save(JNIEnv *jenv, jcla
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1search(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_Nsg_1search(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
   jlong jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::vector< float > *arg2 = 0 ;
@@ -2525,7 +2537,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1search(JNIEnv *jenv, j
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1searchWithOptGraph(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_Nsg_1searchWithOptGraph(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jobject jarg2_, jlong jarg3, jlong jarg4) {
   jlong jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::vector< float > *arg2 = 0 ;
@@ -2551,7 +2563,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1searchWithOptGraph(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1data(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_Nsg_1data(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   Nsg *arg1 = (Nsg *) 0 ;
   std::vector< float > *result = 0 ;
@@ -2566,7 +2578,7 @@ SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1data(JNIEnv *jenv, jcl
 }
 
 
-SWIGEXPORT jlong JNICALL Java_com_nsg_test_nsgannJNI_Nsg_1SWIGUpcast(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_com_nsg_nsgannJNI_Nsg_1SWIGUpcast(JNIEnv *jenv, jclass jcls, jlong jarg1) {
     jlong baseptr = 0;
     (void)jenv;
     (void)jcls;

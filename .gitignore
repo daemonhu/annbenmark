@@ -31,3 +31,7 @@
 *.exe
 *.out
 *.app
+
+#JAVA output
+jni/nsg_ann/out
+jni/nsg_ann/.idea

@@ -11,10 +11,10 @@ SiftUtil::SiftUtil(const std::string& base_file_path,
       query_file_path(query_file_path),
       groundtruth_file_path(groudtruth_file_path),
       dim(0),
-      fvec_base_vec(NULL),
-      fvec_query_vec(NULL),
       fvec_base_vec_num(0),
-      fvec_query_vec_num(0){
+      fvec_base_vec(NULL),
+      fvec_query_vec_num(0),
+      fvec_query_vec(NULL) {
   // load base file
   load_fevc_base_file();
 
@@ -45,7 +45,6 @@ SiftUtil::~SiftUtil() {
 int SiftUtil::read_sift_int(int& num, std::ifstream& input_stream) {
   num = -1;
   input_stream.read(reinterpret_cast<char*>(&num), sizeof num);
-  int gcount = (int)input_stream.gcount();
   if (0 >= input_stream.gcount()) {
     return -1;
   }
